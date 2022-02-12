@@ -3,10 +3,6 @@ body {
 }
 
 /* Navigation Bar */
-.navbar {
-    background-color: #AA7B39
-}
-
 .navbar a {
     float: left;
     display: block;
@@ -41,6 +37,7 @@ body {
     font-size: 40px;
 }
 
+/* Body Text */
 .introduction {
     display: block;
     color: #fafafa;
@@ -59,6 +56,8 @@ body {
     margin-bottom: 15px;
 }
 
+
+/* Photographs */
 img {
     max-height: 400px;
     width: auto;
