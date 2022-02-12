@@ -17,10 +17,16 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.navbar a:hover {
+    background-color: #4A6B8A; 
+    color: #728DA5;
+  }
+
 .navbar-left-side {
     float: left;
 }
 
 .navbar-right-side {
     float: right;
+    font-family: 'Lato', sans-serif;
 }
