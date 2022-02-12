@@ -21,14 +21,9 @@ body {
     background-color: #728DA5; 
   }
 
-  .navbar a:active {
-    color: #dc6f01; 
-  }
-
 .navbar .current {
     color: #dc6f01; 
   }
-
 
 .navbar-left-side {
     float: left;
