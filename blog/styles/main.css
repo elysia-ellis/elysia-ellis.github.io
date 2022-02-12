@@ -25,7 +25,7 @@ body {
     color: #dc6f01; 
   }
 
-.navbar a:current {
+.navbar .current {
     color: #dc6f01; 
   }
 
