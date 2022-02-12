@@ -21,6 +21,10 @@ body {
     background-color: #728DA5; 
   }
 
+  .navbar a:active {
+    color: #dc6f01; 
+  }
+
 .navbar-left-side {
     float: left;
 }
@@ -41,6 +45,6 @@ body {
     float: center;
     display: block;
     color: #FFDCAA;
-    text-align: center;
+    text-align: left;
     font-family: 'Lato', sans-serif;
 }
