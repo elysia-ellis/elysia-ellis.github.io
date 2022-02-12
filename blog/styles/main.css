@@ -39,7 +39,6 @@ body {
     text-decoration: none;
     font-family: 'Cinzel', serif;
     font-size: 40px;
-
 }
 
 .introduction {
@@ -47,5 +46,12 @@ body {
     display: block;
     color: #FFDCAA;
     text-align: left;
+    font-family: 'Lato', sans-serif;
+}
+
+.subject {
+    float: left; 
+    color: aliceblue;
+    text-align: left
     font-family: 'Lato', sans-serif;
 }
