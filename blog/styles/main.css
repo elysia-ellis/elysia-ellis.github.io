@@ -58,3 +58,8 @@ body {
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
+.home-portrait {
+    max-width: 100%;
+    height: auto;
+}
