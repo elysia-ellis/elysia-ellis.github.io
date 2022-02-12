@@ -27,6 +27,7 @@ body {
 
 .navbar-left-side {
     float: left;
+    background-color: none;
 }
 
 .navbar-right-side {
