@@ -54,4 +54,7 @@ body {
     color: aliceblue;
     text-align: left;
     font-family: 'Lato', sans-serif;
+    width: 100vw;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
