@@ -123,3 +123,9 @@ img {
     padding: .5em;
     border: .25em solid #ffb467; 
 }
+
+.blog-entry {
+    color: aliceblue;
+    text-align: center;
+    border: none;
+}
