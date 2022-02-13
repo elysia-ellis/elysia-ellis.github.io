@@ -121,7 +121,7 @@ img {
     border: .25em solid #ffb467; 
 }
 
-.home-portrait {
+#home-portrait {
     max-width: 100%;
     height: auto;
     padding: .5em;
