@@ -112,6 +112,11 @@ body {
 img {
     max-height: 400px;
     width: auto;
+}
+
+.placeholder-image {
+    max-height: 400px;
+    width: auto;
     padding: .5em;
     border: .25em solid #ffb467; 
 }
