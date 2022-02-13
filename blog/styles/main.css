@@ -21,16 +21,15 @@ body {
 
   .header {
       width: 100%;
-      outline: 1px solid red;
-      /* grid-column-start: 1;
+      /* outline: 1px solid red;
+      grid-column-start: 1;
       grid-column-end: 4; */
   }
 
   .placeholder-image {
-    outline: 1px solid red; 
-    
-    /* grid-column-start: 1;
-     grid-column-end: 4;  */
+    /* outline: 1px solid red; 
+    grid-column-start: 1;
+     grid-column-end: 4; */
   }
 
   .blurb {
@@ -124,8 +123,10 @@ img {
     border: .25em solid #ffb467; 
 }
 
+/* Blog Entry */
 .blog-entry {
     color: aliceblue;
     text-align: center;
+    max-width: 35%;
     border: none;
 }
