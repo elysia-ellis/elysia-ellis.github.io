@@ -2,33 +2,42 @@ body {
     margin: 0; 
     background-color: #2A4E6E;
 }
-/* Issue with Grid not working. Hope to return to this later.
   .container {
     width: 100vw;
     height: 100vh;
-    display: grid;
+    display: flex;
+    flex-direction:column;
+    /* justify-content: space-between; */
+    align-items: center;
+
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 60px 1fr 1fr 70px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-areas: 'header header header' 'banner banner banner' 'blurb blurb blurb'
-  }
+    */
+  } 
 
   .header {
-      grid-column-start: 1;
-      grid-column-end: 4;
+      width: 100%;
+      outline: 1px solid red;
+      /* grid-column-start: 1;
+      grid-column-end: 4; */
   }
 
-  .banner {
-     grid-column-start: 1;
-     grid-column-end: 4; 
+  .placeholder-image {
+    outline: 1px solid red; 
+    
+    /* grid-column-start: 1;
+     grid-column-end: 4;  */
   }
 
   .blurb {
-      grid-column-start: 2;
+      /* grid-column-start: 2;
       grid-column-end: 3;
       grid-row-start: 2;
-      grid-row-end: 3;
+      grid-row-end: 3; */
   }
 
   a {
@@ -39,7 +48,6 @@ body {
   a:hover {
       color: #FFDCAA;
   }
-*/
 
 /* Navigation Bar */
 .navbar a {
@@ -74,6 +82,7 @@ body {
     text-decoration: none;
     font-family: 'Cinzel', serif;
     font-size: 40px;
+    margin-right: 10px;
 }
 
 /* Body Text */
