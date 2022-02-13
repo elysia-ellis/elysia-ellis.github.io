@@ -135,3 +135,12 @@ img {
     max-width: 35%;
     border: none;
 }
+
+#learning-plan {
+    display: block;
+    color: #fafafa;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    align-content: center;
+    margin-left: auto;
+}
