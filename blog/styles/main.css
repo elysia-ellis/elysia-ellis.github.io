@@ -131,9 +131,12 @@ img {
 /* Blog Entry */
 .blog-entry {
     color: aliceblue;
-    text-align: center;
+    text-align: left;
     max-width: 35%;
     border: none;
+    align-content: center;
+    margin-left: 350px;
+    margin-right: 350px;
 }
 
 #learning-plan {
@@ -142,8 +145,8 @@ img {
     text-align: left;
     font-family: 'Lato', sans-serif;
     align-content: center;
-    margin-left: 600px;
-    margin-right: 600px;
+    margin-left: 350px;
+    margin-right: 350px;
 }
 #identity-values {
     display: block;
@@ -151,6 +154,6 @@ img {
     text-align: left;
     font-family: 'Lato', sans-serif;
     align-content: center;
-    margin-left: 600px;
-    margin-right: 600px;
+    margin-left: 350px;
+    margin-right: 350px;
 }
