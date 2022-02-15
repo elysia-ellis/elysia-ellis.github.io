@@ -158,12 +158,12 @@ img {
     margin-right: 350px;
 }
 
-@media screen (max-width: 480px) {
-    img {
+@media screen and (max-width: 480px) {
+    .placeholder-image {
         max-height: 110px;
         width:auto;
         padding: .1em;
-        border: .05em solid #ffb467;
+        border: .09em solid #ffb467;
     }
     h1 {
         font-size: 40px;
@@ -178,12 +178,13 @@ img {
         max-height: 110px;
         width: auto;
         padding: .1em;
-        border: .05em solid #ffb467;
+        border: .09em solid #ffb467;
     }
     a {
         text-size-adjust: auto;
     }
     .navbar a {
         padding: 5px 10px;
+        text-size-adjust: auto;
     }
 } 
