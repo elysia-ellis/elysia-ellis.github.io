@@ -158,21 +158,20 @@ img {
     margin-right: 350px;
 }
 
+/* Good enough for now - return to later if time*/
 @media screen and (max-width: 480px) {
-    .placeholder-image {
+    img {
         max-height: 110px;
         width:auto;
-        padding: .1em;
-        border: .09em solid #ffb467;
     }
     h1 {
-        font-size: 40px;
+        font-size: auto;
     }
     h2 {
-        font-size: 30px;
+        font-size: auto;
     }
     p {
-        font-size: 12px;
+        font-size: 15px;
     }
     #home-portrait {
         max-height: 110px;
@@ -180,11 +179,25 @@ img {
         padding: .1em;
         border: .09em solid #ffb467;
     }
+    .placeholder-image {
+        max-height: 110px;
+        width: auto;
+        padding: .1em;
+        border: .09em solid #ffb467;
+    }
     a {
-        text-size-adjust: auto;
+        text-size-adjust: 15px;
     }
     .navbar a {
         padding: 5px 10px;
-        text-size-adjust: auto;
+    }
+    li {
+        font-size: 15px;
+    }
+    .navbar-right-side {
+        font-size: 20px;
+    }
+    .navbar-left-side {
+        font-size: 15px;
     }
 } 
