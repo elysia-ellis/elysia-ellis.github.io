@@ -183,4 +183,7 @@ img {
     a {
         text-size-adjust: auto;
     }
+    .navbar a {
+        padding: 5px 10px;
+    }
 } 
