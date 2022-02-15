@@ -162,6 +162,6 @@ img {
     #home-portrait {width: 350px;
         height: auto;
         padding: .1em;
-        border: .05em solid #ffb467
+        border: .05em solid #ffb467;
     }
 } 
