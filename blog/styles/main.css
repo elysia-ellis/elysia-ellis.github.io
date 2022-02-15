@@ -159,9 +159,19 @@ img {
 }
 
 @media screen (max-width: 480px) {
-    #home-portrait {width: 350px;
+    #home-portrait {
+        width: 350px;
         height: auto;
         padding: .1em;
         border: .05em solid #ffb467;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 12px;
     }
 } 
