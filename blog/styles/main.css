@@ -166,12 +166,21 @@ img {
         border: .05em solid #ffb467;
     }
     h1 {
-        font-size: 20px;
+        font-size: 40px;
     }
     h2 {
-        font-size: 15px;
+        font-size: 30px;
     }
     p {
-        font-size: 10px;
+        font-size: 12px;
+    }
+    #home-portrait {
+        max-height: 110px;
+        width: auto;
+        padding: .1em;
+        border: .05em solid #ffb467;
+    }
+    a {
+        text-size-adjust: auto;
     }
 } 
