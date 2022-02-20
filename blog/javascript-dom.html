@@ -62,12 +62,51 @@
     </div>
     <div>
         <h3>Control Flow & Loops, Arrays & Objects</h3>
-        <!--daily life example for control flow and loops-->
+        <!--Everyday example for control flow & loops-->
+        <!--CONTROL FLOW-->
+            <h2>Control Flow</h2>
+            <p>With JavaScript's control flow, rather than JavaScript's code being read from top to bottom (as it is by default), a web developer can control how code is read and enacted based on a set of rules they put into place. I'll explain using something more relatable... gardening! Like my experience with learning web development learning how to garden, has been full of trial and error.</p> 
+            <p>To be honest, my initial approach to gardening wasn't so good. I followed a path of what I thought should happen, (like the computer's default way of reading JavaScript code, from top to bottom, from A to B).</p>
+            <p>To start my garden, I:</p>
+                <ul>
+                    <li>Cleared the glass house</li>
+                    <li>Planted starters</li>
+                    <li>Layed sheep pellets and peastraw</li>
+                    <li>Watered regularly</li>
+                    <li>Pulled the weeds</li>
+                </ul>
+            <p>... and I kind of just hoped that everything would be fine and it would thrive. What I didn't really plan for was how I might need to respond to certain paths that the plants took. For example, what to do if:</p>
+                <ul>
+                    <li>The tomatoes grow super tall and become heavy?</li>
+                    <li>The herbs start to flower?</li>
+                    <li>The snail population explodes?</li>
+                    <li>The strawberries are tiny?</li>
+                    <li>The passionfruit busts out of the glass and overtakes everything?</li>
+                    <li>The birds find their way in through the hole in the glass?</li>
+                </ul>
+            <p>I don't want to waste prescious resources growing plants that don't reach their full potential, so I need to base my actions as a gardener on what I am seeing from the plants in the garden at the time.</p>
+            <p>Let's say that I, the gardner is equivallent to JavaScript code talking to the web browser about how things should happen on the website (which we'll call the garden), and let's say the plants in the garden are a user interacting with a website. Wouldn't it be helpful if JavaScript (the gardner) could respond appropriately to the user (the plant's) signals, to display a live, dynamically responding site (like a thriving garden)?</p>
+            <p>One way to change the flow of JavaScript is with conditional statements. Using the garden metaphor, conditional statements can work like this:</p>
+                <ul>
+                    <li><strong>If</strong> the tomatoes are tall,</li>
+                    <p><strong>return</strong> with bamboo stakes and ties, and tie them up.</p>
+                    <li><strong>Else if</strong> the leaves are droopy,</li>
+                    <p><strong>return</strong> to the tap and turn on the water.</p>
+                    </li><strong>Else</strong> (no signals from plant),</li>
+                    <p><strong>return</strong> to pull some weeds.</p>
+                </ul> 
+            <p>These conditions will change the path that the gardner (JavaScript) takes, based on the signals or actions of the plant (the User inputs).</p>
+        <!--LOOPS-->
+            <h3>Loops</h3>
+            <p>Another way that the JavaScript pathway through the code can be changed is through loops. Loops are useful when you want to repeate a task with less effort. For example, the gardner wants to water all of the plants, every morning in the summer, when the sun rises. If you had a drip system looping around the garden, and a special garden hose timer, you could set the timer so that in the summer, it would turn the water on once the daylight sensor was triggered, and you could even specify that you wanted it to run for three hours, so that you don't overwater the garden and kill the plants.</p>
+            <p>Another way you could use a loop is if you had a set of soil sensors, one in each garden bed, and you pressed a button on a remote that sent out a signal to each sensor which boomeranged back a report of the moisture levels in each garden bed. Wouldn't that be handy?!</p>
         <!--difference between acessing data from arrays and objects-->
-            <p></p>
-            <ul>
-              <li><strong></strong></li>
-            </ul>
+            <h3>Objects</h3>
+            <p>Objects are like a magician's hat in which you can put anything that you like, without worrying about the size or shape of it, as long as you can describe it's characteristics, it can fit in the hat.</p> 
+            <p>You might say, I want to put in a rabbit - the rabbit's name is 'Jack', it's age is 6 months, it's coat is long, it's color is white, it's eyes are red, it's attitude is grumpy... Or you might want to put in a scarf - the scarf is 10 metres long, it's color is blue, it's fiber is silk, it's type is chiffon... You could even put in something abstract, like a sunset - the time is 7.38pm, the weather is mild, the temperature is warm, the clouds are pink. The details of each thing in the hat are it's properties, made up of keys (like cloud) and values (like pink).</p>
+            <p>What's great about these things that you've put in the hat, is that you can change them, remove them, and pull them out as you like. It's as easy as writing a note for the magician saying, "I'd like to know the what the fiber of the scarf is." You say this by calling up the item 'scarf' and the key of what you want to know 'fiber' and telling you that you want it to return that. "Tada!", as long as you've written the note after the object has been put in the hat, the magician will tell you, the fiber is 'silk'.</p>
+            <h3>Arrays</h3>
+            <p>Arrays are used to store cataloged collections of items. Think of a library which houses books. The books stored on a single shelf in a libary is analogous to a collection of items stored in an array. The books belong to a category, each book has it's own number, and the books are lined up in order of their unique number (but not alphabetically by their title), which helps people locate the book they'd like to read. The library number system doesn't always make perfect sense to the non-librarian, and similarly, the web developer's number system also doens't make perfect sense. The web developer counts items in an array starting at zero. Just like libary books, you can access items in an array by first finding their location number, then pulling them from their location number.</p>
     </div>
     <div>
         <h3>Functions are Useful! Here's Why...</h3>
