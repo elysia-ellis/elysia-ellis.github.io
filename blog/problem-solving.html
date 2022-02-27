@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Website of an aspiring Web Developer">
+    <meta name="keywords" content="web dev, web developer, enspiral dev academy, dev academy, web developer student blog, web development education"/>
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Lato&display=swap" rel="stylesheet">
+    <title>Elysia Learns Web Development</title>
+  </head>
+  <!-- Body of Webpage -->
+  <body>
+    <div class="container">
+      <!-- Navigation Bar -->
+      <div class="header">
+        <headers>
+          <div class="navbar">
+            <nav>
+              <div class="navbar-left-side">
+                  <a href="../index.html">Home</a>
+                  <a class="current" href="blog.html">Blog</a>
+                  <a href="../learning-plan.html">Learning Plan</a>
+                  <a href="../creative.html">Gallery</a> 
+                  <a href="../identity-and-values.html">Identity & Values</a> 
+                  <a href="../about.html">About</a>
+              </div>
+              <div class="navbar-right-side">
+                <div>Elysia Ellis</div>
+              </div>
+            </nav>
+          </div>
+        </headers>
+      </div>
+      <!-- Blog Post -->
+      <div class="blog-entry">
+        <h1>Sprint 4 Blog</h1>
+          <h2>Problem Solving</h2>
+            <h3>Getting Unstuck on the Problem</h3>
+              <p>
+                Just yesterday, I got really stuck on a problem. As part of my web development studies, I was asked to code a function (which is like writing a forumula) in a language for computer programs called JavaScript. The function would be used to reach into a given sentence about a bumblebee (named deBee), and return the sentence having eliminated every "annoying buzzing sound". This turned out to be the word "buzz". It didn't matter how many times "buzz" turned up in the sentence, or whether it included any capital letters. All I needed to do was write a function that removed every occurnace of the word "buzz" and return everything else in the sentence.
+              </p>
+              <p>
+                It was the equivalent of someone saying to a friend with a great carrot cake receipe, "Hey! I'd love to bake that awesome cake that you made for my birthday last year, for my mom... but since she is allergic to walnuts, would you mind sending me the recepie without them?" If my friend had this receipe written by hand, they might go through and cross out or white out all of the occurances of the word "walnuts". In the real world, the recepie would probably need to have more than just the word "walnuts" removed, but for simplicity let's say that it was enough to just remove the word "walnuts" from the receipe.
+              </p>                
+              <p>
+                I didn't have the sentence about bees written down on paper like a cake recepie. So I needed to find out what word was used for the "annoying buzzing sound". I also didn't know at first that the word "buzz" was sometimes written with capital letters. However, I was provided with tests to see if my formula was working, and these helpful tests included error messages that would appear if a step in the function wasn't returning the desired result (ie. wasn't true). Tests are kind of like a mental check list to make sure your code is working. 
+                </p>
+                <p>The friend in the cake recepie example might do the following mental "test" checklist to ensure they have removed every occurance of the word "walnuts" from the recepie:
+              </p>
+              <ol>
+                <li>Does the ingredients list have walnuts listed - yes or no? If yes, their brain would thow out the error message, "the ingredients list should not contain walnuts", and they would take action to correct that oversight and cross out walnuts.</li>
+                <li>Does the combine ingredients instruction include add walnuts - yes or no?  If yes, their brain would thow out the error message, "the combine ingredients instructions should not contain walnuts", and they would take action to correct that oversight and cross out walnuts.</li>
+              </ol>
+              <p>
+                From the helpful test error messages about my function for deBee regarding the sentence about bees, I could see that: "deBee should return a string where the word buzz has been removed, regardless of capitalization."
+              </p>
+              <p>
+                Since I then knew what the function needed to do, I had to decide how to make it do this? Fortunately, I was told in the instruction for this challenge, that a good way to accomplish my task would be to <strong>split</strong> (ie. divide) the sentence up into individual words, then create a <strong>filter</strong> that would remove any of the words deemed to be "annoying sounds" - which the error message had just told me was "buzz".
+              </p>
+              <p>
+                I decided the best way to go about figuring out the order in which to do things was to write pseudocode, which is a draft of the function written in plain english.
+              </p>
+              <p>
+                My pseudocode said something similar to this:
+              </p>
+              <ol>
+                <li>Take each word out of the sentence about bees, and put the words into their own individual boxes.</li>
+                <li>Regardless of capitalization, discard of every box that has the word "buzz" in it.</li>
+                <li>Take the remaining words out of the box, and put them back together as a sentence.</li>
+              </ol>
+              <p>
+                Using JavaScript vocabulary, this pseudocode translates to: 1) split the string into an array, 2) = regardless of capitalization, remove "buzz", 3) = return a string.
+              </p>
+              <p>
+                To find out how the JavaScript methods (or tools) of <strong>split</strong> and <strong>filter</strong> worked, I googled, "how to split a string in JavaScript." After reading the instructions on this <a href="https://www.w3schools.com/jsref/jsref_split.asp">w3schools link</a> and reading <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split">the MDN Web Docs on the split method</a> (ie. an instruction manual for JavaScript), I was able to code a line that would allow that step to occur within the "deBee" function.
+              </p> 
+              <p>
+                Next, I ran the same kind of search for to learn how to <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase">transform an array into all lower case</a> (ie. all my boxes with individual words) and to learn how to return everything that was not a specified word <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">the filter method</a>. 
+              </p>
+              <p>
+                Then, I had to figure out how to turn the array back into a string (ie. sentence) using the <strong>join</strong> method, and again, Google saved the day <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join">with the MDN Web Docs on the join method</a>.
+              </p>
+              <p>
+                What felt like a large problem at first, eventually became a series of simple problems. I broke the problem down into logical steps, researched how to implement the steps, tried a few different ways of writing the steps until I came upona a solution step by step, and the larger problem was solved.
+              </p>
+            <h3>Problem Solving Techniques</h3>
+              <h4>Pseudocode</h4>
+                <p>As demonstrated above, pseudocode is faux code. It's an informal description of steps resolving individual problems that make up a larger problem. Pseudocode is written in succinct, plain English, which is easily comprehensible with one problem-solving action per line. It is written by a human for a human to read, and each step is self-explanatory. Like a set of general instructions, it is read in order from top to bottom. Each pseudocode step will eventually be translated into code for the computer to read. I feel like I got good practice writing pseudocode this week. In time, I'm confident that this will become a habit for me. 
+                </p> 
+                <p>
+                  Writing pseudocode is kind of similar to minute taking at board meetings. The minute taker listens to the discussion, and then writes it out succinctly so that anyone who reads the minutes, even if they weren't at the meeting, can understand the discussion that took place. Pseudocode is written so that any web developer can understand it, even if they are freshly approaching a problem.
+                </p>
+              <h4>Trying Something</h4>
+                <p>
+                  I spent a lot of time trying different ways to write code. The key to trying things is to make them informed tries. Through a failed tries based on guesses and my own logic, I learned that the best way to try things is to break large problems down into small problems, think about what you need to do to solve the first small problem, research that, and then try something. If it works, great! Then repeat that process for the next problem. If it doesn't work, do some more research, then try again. I feel more confident about trying things that I have an understanding of through research, than trying things that I have only heard of but have no real understanding of.
+                </p>
+              <h4>Rubbery Ducky Method</h4>
+                <p>
+                  I love the rubber ducky method for problem solving! With the rubber ducky method, in an attempt to de-bug code, the web developer explains what is happening with their code line-by-line as though they are speaking to a rubber duck who can't understand, unless it is presented in plain english, step-by-step, in a very simple way. This can often help unveil where the problem is and allow a potential solution to appear. In my Sprint 2 Technical Blog post <a href="../margin-border-padding.html"><em>Margin, Border, and Padding</em></a>, I wrote as though I was explaining it to a rubber ducky. A bonus to this method is that it helped anchored the concepts in my mind, so that I can easily reflect on them in future. Just the process of talking about a problem to someone else helps get one out of their own head and examine the problem from another perspective.
+                </p>
+              <h4>Reading Error Messages</h4>
+                <p>
+                  The word error can be an anxiety inducing one. Just googling the definition comes up with a whole lot of words that one might naturally associate with something bad happening; an error is "a mistake", "wrong", "incorrect", "not true", and even worse, a "failure"! It's no wonder that when seeing an error, the first instinct is to look away. However, in programming, errors might be more appropriately called "friendly reminder", or even "guide". Errors may show up in red text, but they are full of useful information. Often it not only tells you exactly what is missing from your code, but also from where in your code it is missing. At first, I was frustrated by the error messages which arose from the challenges this week, but once I started viewing them as "helpers" I was eager to see what they had to say. This gave me more confidence in reading them.
+                </p>
+              <h4>Console.logging</h4>
+                <p>
+                  The console.log is a handy way to see if your JavaScript code is outputting information as you intend for it to. It allows you to print information in your web page's console, which is visible in your web browser's web developer tools. This problem solving tool doesn't allow you to save data, but it can print a string (ie. words/text) to the console. For example, it can return the result of a function that you have asked it to print, it can pull an item out of an array when you call it up by it's index (order number of item within an array), or it can print the whole array. Initially, I had trouble seeing the console.log print outs in the challenge's console window on Repl.it, but after reaching out to a classmate about this problem, I discovered that I needed to simply scroll back up in the console, as the height of my window wasn't tall enough to show both the console.log result and test message. This felt like such a simple mistake, but learning about this gave me more confidence that console.log is indeed, an incredbily helpful tool.
+                </p>
+              <h4>Googling</h4>
+                <p>
+                  Google's search engine has become a part of everyday life. Want to know what the weather is going to be like later today? Google it. Want to know how to use one of JavaScript's inbuilt methods on an array, Google it! The internet is full of information, but since anyone can put information onto the internet, it's full of good and bad information. Bad information that can lead a person down rabbit holes. The main thing that one needs to keep in mind when Google searching is, "is this information from a trustworthy source?" The thing with web development is that there are many ways to do the same thing, so it's best to phrase the question clearly, in a way that will most likely return a fruitful, trustworthy result. Ensure that you're familiar with the source delivering the information, or if you are not, research the source. I feel pretty confident with my ability to search on Google and filter the results based on the source, but since web development is new to me, there are a lot of sources that I am unfamiliar with. So either I need to spend time researching those sources, or go with trusted sources that my teachers have recommneded. For how, I'm sticking with the trusted resources that have been recommended to me.
+                </p>
+              <h4>Asking Peers for Help</h4>
+                <p>
+                  Asking peers for help can be a tough thing, especially when you're not sure how to pose a question. This week, I challenged myself to reach out to new peers to ask for guidance. I was glad that I had mustered up the courage to so, and will do this more in future. I feel best about reaching out to peers when I do so in a way that doesn't put pressure on them to help me. The respectful thing to do is check in to see if they have time to help, to be prepared to not recieve the help right away, and to have gratitude for any help offered. I don't expect others to resolve my problems, and I'm feeling more at peace with posting my questions in public forums - I think that's a good place to be at.
+                </p>
+              <h4>Asking Coaches for Help</h4>
+                <p>
+                  Asking coaches for help feels more natural than asking one's peers. Again, it's best to do this in a way that is not putting pressure on other's to provide 100% clarity about the problem. Although it's great and much appreciated when 100% clarity can be achieved through conversation, this doesn't always happen and that's okay. Conversation with questions and hints are great as they allow me to do my own thinking about problems and to do further research as well. I feel pretty comfortable asking coaches for help.
+                </p>
+              <h4>Improving Process with Reflection</h4>
+                <p>Reflection has been my favourite part of testing and solidifying my knowledge. If I am not able to explain something clearly in a reflection, it helps me understand the aspects that I need to research further. I am a very reflective person, so I have to be careful not to go too deep on my reflections. I can just allow the questions to arise, and write them down for research at an appropriate time.</p>
+        </div>
+    </div>
+  </body>
+</html>
